@@ -40,11 +40,11 @@ public class Money {
     }
 
     private static String numberToString(int number) {
-        String strNumber = "";
-
         if (number == 0) {
             return "";
         }
+
+        String strNumber = "";
 
         for (int i = 0; i < groups.length; i += 1) {
             if (number % 1000 > 0) {
